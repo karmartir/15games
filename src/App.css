@@ -14,36 +14,18 @@
     align-items: center;
 }
 
-/*
 .tile{
     width: 200px;
     height: 200px;
     display: flex;
     background-color: cornflowerblue;
     color: white;
-    font-size: 36px;
+    font-size: 52px;
     font-weight: 600;
-    cursor: pointer;
-    border: 1px solid black;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-}
-*/
-.tile{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    background-color: cornflowerblue;
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
     cursor: pointer;
     border: 6px solid white;
     border-radius: 20px;
-
 }
-
 
 .tile-text{
     width: 100%;
