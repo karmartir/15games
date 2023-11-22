@@ -4,9 +4,10 @@ import Tile from "./Tile";
 
 interface BoardProps {
     tiles: number[]
+    handleClick: (index: number) => void;
 }
 
-const Board: React.FC<BoardProps> = ({tiles}) => {
+const Board: React.FC<BoardProps> = ({tiles,  handleClick}) => {
 
     const renderRow = (rowIndex: number) => {
     return (
@@ -15,6 +16,7 @@ const Board: React.FC<BoardProps> = ({tiles}) => {
                     <Tile
                         key={index}
                         value={value}
+                        onClick={() => handleClick(index + rowIndex * 4)}
                     />
                 ))}
         </div>
